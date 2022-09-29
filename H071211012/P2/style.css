@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* color */
+    --cultured: #f8f9faff;
+    --cultured-2: #e9ecefff;
+    --gainsboro: #dee2e6ff;
+    --light-gray: #ced4daff;
+    --cadet-blue-crayola: #adb5bdff;
+    --sonic-silver: #6c757dff;
+    --davys-grey: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+}
+
+/* ----Navbar---- */
+.navbar {
+    position: static;
+    background-color: var(--eerie-black);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+
+#brand-text {
+    color: var(--cultured);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar .menu-text {
+    color: var(--davys-grey);
+    align-self: center;
+}
+
+.navbar .menu-text .button-text {
+    color: white;
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--cultured);
+    font-weight: 300;
+}
+
+.home li,
+.about li {
+    color: var(--sonic-silver);
+    font-weight: 700;
+    cursor: default;
+}
+
+/* ----End of Navbar---- */
+
+/* ----Footer---- */
+.footer {
+    color: var(--cultured-2);
+    background-color: var(--eerie-black);
+    padding: 4rem 4rem 4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .foot-title {
+    font-size: 18px;
+}
+
+.kiri .foot {
+    background-color: var(--cultured) !important;
+}
+
+.kiri .instagram,
+.kiri .github {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+.kiri .instagram img,
+.kiri .github img {
+    width: 40px;
+}
+
+.kanan form input[type=text] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.kanan form #isi-text-komentar {
+    padding: .5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.kanan #komentar {
+    font-size: 18px;
+}
+
+/* ----End of Footer---- */
+
+/* ----Jumbotron---- */
+.jumbotron {
+    background-color: var(--davys-grey);
+    background-position-x: center;
+    background-position-y: -20px;
+    height: 590px;
+    background-size: auto;
+    background-image: url("https://images.unsplash.com/photo-1480365334925-2aee561aa28e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1496&q=80");
+    background-repeat: no-repeat;
+}
+
+.jumbotron .jumbotron-text {
+    padding: 50px 0px 575px 0px;
+    text-align: center;
+    color: var(--eerie-black);
+}
+
+.jumbotron .jumbotron-text #welcome {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.jumbotron .jumbotron-text #stuto {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+/* ----End of Jumbotron---- */
+
+/* ----Text---- */
+.text {
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+#judul {
+    padding: 3rem 0rem 1.5rem 0rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tulisan {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0rem 11rem 0rem 11rem;
+    margin-bottom: 5rem;
+    column-gap: 2rem;
+    font-size: 14px;
+}
+
+/* ----End of Text---- */
+
+/* ----Content---- */
+.our {
+    width: 100%;
+    background-color: var(--cultured-2);
+}
+
+.our #our-title {
+    padding: 30px 0px 20px 0px;
+    text-align: center;
+}
+
+.our .section {
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 15px;
+}
+
+.our .section .our-content {
+    padding: 10px 10px 10px 10px;
+}
+
+.our .section .our-content .image-1 {
+    width: 200px;
+    border-radius: 9px;
+}
+
+.our .section .our-content .text-our-content {
+    width: 200px;
+    font-size: 12px;
+}
+
+.garis-our-content {
+    border-width: 0;
+    width: 30%;
+    background-color: var(--onyx);
+    height: .4rem;
+}
+
+.text-button {
+    cursor: pointer;
+    padding: 7px 15px;
+    color: white;
+    background-color: var(--cadet-blue-crayola);
+    border: none;
+    border-radius: 8px;
+    transition: background-color .5s;
+}
+
+.text-button:hover {
+    background-color: var(--onyx);
+}
+
+/* ----End of Content---- */
+
+/* =====================Halaman About============================= */
+.canvas h3,
+.canvas table {
+    width: fit-content;
+    margin: auto;
+    align-self: center;
+}
+
+.canvas h3 {
+    font-size: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.canvas #formal {
+    display: flex;
+    justify-content: center;
+}
+
+.canvas #formal img {
+    width: 200px;
+    margin: auto;
+}
+
+.canvas .tabel-datdir {
+    margin-bottom: 4rem;
+}
