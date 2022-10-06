@@ -1,0 +1,126 @@
+body{
+  background-color: #070707;
+  margin: 0;
+}
+ul {
+  width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family:'Segoe UI';
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #D8D2CB;
+  }
+
+  .jumbotron{
+    width: 100% ;
+  }
+
+  .welcome-text{
+    position: absolute;
+    text-align: center;
+    font-size: 70px;
+    top: 40%;
+     width: 100%;
+     color :beige;
+     text-shadow: 3px 5px 0px black;
+  }
+
+.title {
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.profile {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.konten {
+    float: left;
+}
+
+.konten p {
+    padding: 10px;
+    color: #bccfe1;
+    transition: color 1s, background-color 1s;
+}
+
+.konten p:hover {
+    background-color: #628f9c;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 250px;
+  transition: border 1s, width 1s;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  width: 300px;
+}
+
+div.gallery img {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.allgallery {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gallery img{
+  border-radius: 50px;
+}
+
+.footer{
+  margin-top:50px ;
+  background-color: rgb(93, 95, 95);
+  font-size: 20px;
+}
+
+.footer p {
+  padding: 0;
+  margin: 0;
+  color: rgb(254, 254, 254) ;
+}
