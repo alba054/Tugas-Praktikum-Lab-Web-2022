@@ -1,0 +1,31 @@
+#sifat {
+    font-size: 1.35em;
+    color: aliceblue;
+}
+
+.navbar .nav-item a{
+    color: aliceblue;
+}
+
+.btn-grey{
+    background-color: rgb(84, 112, 146);
+}
+.btn-grey:hover{
+    background-color: rgb(66, 81, 121);
+}
+
+.navbar{
+    background-color: rgb(48, 63, 85);;
+}
+
+.card{
+    background-color: rgb(48, 63, 85);
+}
+
+.card-group{
+    background-color: rgb(50, 67, 94);
+}
+
+.footer{
+    background-color: rgb(155, 155, 245);
+}
