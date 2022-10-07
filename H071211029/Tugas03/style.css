@@ -1,0 +1,32 @@
+#desc {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 30px;
+}
+
+#desctext {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#divisi {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 25px;
+  justify-content: center;
+}
+
+#subdivisi {
+  background-color: silver;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#descdivisi {
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+}
+
+#foot {
+  background-color: rgb(43, 43, 43);
+  padding-top: 1px;
+}
