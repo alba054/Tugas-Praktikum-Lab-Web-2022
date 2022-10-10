@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* color */
+    --cultured: #f8f9faff;
+    --cultured-2: #e9ecefff;
+    --gainsboro: #dee2e6ff;
+    --light-gray: #ced4daff;
+    --cadet-blue-crayola: #adb5bdff;
+    --sonic-silver: #6c757dff;
+    --davys-grey: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar ul {
+    color: var(--eerie-black);
+    opacity: 1;
+}
+
+.navbar .btn {
+    color: var(--cultured);
+    border: none;
+    background-color: var(--eerie-black);
+}
+
+/* End of Navbar */
+
+/* Skill */
+.skill {
+    background-color: var(--eerie-black);
+    opacity: 1;
+}
+
+.skill .container {
+    color: var(--cultured);
+}
+
+.skill a {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.skill .h6 {
+    font-weight: 800;
+}
+
+.skill .cont {
+    width: fit-content;
+    margin: auto;
+}
+
+/* Card System */
+.container .card-body .card-text {
+    padding: 0px 5px 0px 5px;
+    font-size: 14px;
+}
+
+.container .card-body .btn {
+    background-color: var(--eerie-black);
+    color: var(--cultured);
+    font-size: 12px;
+}
+
+/* End of Skill */
+
+/* Alert */
+.alert {
+    padding: auto;
+    margin: 0;
+    height: 60px;
+}
+
+.alert .linked {
+    margin-right: 20px;
+}
+
+.alert .linked .ig-logo,
+.alert .linked .github-logo {
+    margin-right: 10px;
+}
+
+/* End of Alert */
+
+/* Footer */
+.foot {
+    background-color: var(--eerie-black);
+    color: var(--cultured-2);
+}
+
+.kanan form input[type=text] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.kanan form #isi-text-komentar {
+    padding: .5rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.kanan #komentar {
+    font-size: 18px;
+}
+
+/* End of Footer */
