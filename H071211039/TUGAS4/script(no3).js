@@ -1,4 +1,5 @@
 let kalimat = prompt("Masukkan kalimat");
+kalimat = kalimat.toLowerCase();
 let pisah = kalimat.split("");
 let dihitung = {};
 
