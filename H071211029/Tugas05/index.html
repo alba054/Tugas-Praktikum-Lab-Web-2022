@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tugas Praktikum 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="color">
+            <h1>BlackJack</h1>
+            <h5>Play A Round?</h5>
+            <h5>Your Cards:</h5>
+            <span id="card"></span>
+            <h5>Sum: <span id="jumlah"></span></h5>
+        </div>
+        <button type="button" class="btn btn-warning" onclick="start()" id="mulai">Start Game</button>
+        <button type="button" class="btn btn-dark" onclick="draw()" id="tambah">Take Card</button>
+        <div class="color">
+            <span id="anoun"></span>
+            <h5>Your Money: Rp. <span id="money">5000</span></h5>
+        </div>
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control" id="main" placeholder="Set Your Bet..." aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+        <button type="button" class="btn btn-secondary" onclick="reset()">Reset Money</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
