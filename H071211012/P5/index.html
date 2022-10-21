@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-BlackJack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container justify-content-center">
+            <div class="header row align-items-center">
+                <div class="left-content col">
+                    <p class="h5">Your Money</p>
+                    <p class="h6">Rp<span id="money">5000</span></p>
+                </div>
+
+                <div class="center-content col-6">
+                    <p class="h1">Black<span id="jack-text">jack</span> Game</p>
+                    <hr id="header-line">
+                </div>
+
+                <div class="right-content col text-end">
+                    <button class="btn btn-primary pr-6" id="resmo-button" onclick="resmoButton()" type="submit">Reset
+                        Money</button>
+                    <button class="btn btn-primary p-1" id="restart-button" onclick="reset()"
+                        type="submit">Restart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container align-items-center">
+            <div class="playing-content">
+                <div class="row p-4">
+                    <div class="left-area col text-start">
+                        <p class="player-title h5">Your card</p>
+                        <!-- <hr class="player-line"> -->
+                        <div class="result mt-4 mb-4">
+                            <p class="h5">= &nbsp;&nbsp;&nbsp;<span id="your-result"></span></p>
+                        </div>
+                        <div id="your-card">
+
+                        </div>
+                        <p class="h6 mt-4" id="result-text"></p>
+                    </div>
+
+                    <div class="mid-area col text-center">
+                        <img src="Assets/Belakang.png" id="back-card" alt="belakang kartu">
+                        <hr id="card-line">
+                        <div class="place-bet container">
+                            <p class="bet-text h5 pt-3" id="pyb-txt">Place your bet</p>
+                            <input class="form-control text-center mt-3" id="input-bet" type="number" min="0"
+                                placeholder="Rp">
+                        </div>
+                        <button class="btn btn-primary p-1 mt-2" id="submit-button" onclick="submitButton()"
+                            type="submit">Submit</button>
+                        <div class="but-control row mt-4 gx-1">
+                            <div class="col">
+                                <button onclick="standButton()" id="stand-bt"
+                                    style="background-color: #606c38; border: none;"><img src="Assets/stand-bt.png"
+                                        class="duo-button mb-2" alt=""></button>
+                                <p class="h6" id="stand-text">Stand</p>
+                            </div>
+                            <div class="col">
+                                <button onclick="hitButton()" id="hit-bt"
+                                    style="background-color: #606c38; border: none;"><img src="Assets/hit-bt.png"
+                                        class="duo-button mb-2" alt=""></button>
+                                <p class="h6" id="hit-text">Hit</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-area col text-end">
+                        <p class="player-title h5">Dealer's card</p>
+                        <!-- <hr class="player-line" id="right-line"> -->
+                        <div class="result mt-4 mb-4">
+                            <p class="h5"><span id="dealer-result"></span>&nbsp;&nbsp;&nbsp; =</p>
+                        </div>
+                        <div id="dealer-card">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="func.js"></script>
+</body>
+
+
+</html>

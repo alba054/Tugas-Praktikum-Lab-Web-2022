@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+
+    /* color var */
+    --amber: #ffbd00ff;
+    --dark-olive-green: #606c38ff;
+    --kombu-green: #283618ff;
+    --cornsilk: #fefae0ff;
+
+    /* cardsize */
+    --cardHeight: 175px;
+    --duoButHeight: 40px;
+}
+
+body {
+    background-color: var(--kombu-green);
+}
+
+hr {
+    border: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Header Content */
+.header {
+    padding-top: 20px;
+}
+
+.header .center-content .h1 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: var(--cornsilk);
+    /* width: 350px; */
+}
+
+.header .center-content #jack-text {
+    color: var(--amber);
+}
+
+.header .center-content #header-line {
+    position: relative;
+    margin: auto;
+    opacity: 1;
+    width: 250px;
+    background-color: var(--amber);
+    min-height: 3px;
+}
+
+.header .left-content .h5 {
+    width: 150px;
+    color: var(--amber);
+    font-weight: 700;
+}
+
+.header .left-content .h6 {
+    font-weight: 300;
+    color: var(--cornsilk);
+}
+
+.header .right-content {
+    /* background-color: black; */
+}
+
+.header .right-content #restart-button {
+    font-style: italic;
+    font-weight: 700;
+    background-color: var(--kombu-green);
+    border-color: var(--amber);
+    border-width: 2px;
+    border-radius: 30px;
+    width: 100px;
+}
+
+.header .right-content #resmo-button {
+    font-style: italic;
+    font-weight: 700;
+    background-color: var(--kombu-green);
+    border-color: var(--amber);
+    border-width: 2px;
+    border-radius: 30px;
+    width: 130px;
+}
+
+/* End of Header Content */
+
+/* Playing Content */
+.playing-content {
+    background-color: var(--dark-olive-green);
+    margin: 40px 0px 40px 0px;
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.playing-content .card-item {
+    height: var(--cardHeight);
+}
+
+.playing-content .player-title {
+    color: var(--amber);
+    font-weight: 700;
+}
+
+.playing-content .player-line {
+    opacity: 1;
+    width: 50px;
+    background-color: var(--amber);
+    min-height: 3px;
+}
+
+.left-area #result-text {
+    font-weight: 700;
+    color: var(--cornsilk);
+}
+
+
+.right-area #right-line {
+    text-align: right;
+    justify-content: right;
+}
+
+.playing-content .result .h5 {
+    color: var(--cornsilk);
+    font-weight: 700;
+}
+
+.playing-content .result .h5 #your-result,
+.playing-content .result .h5 #dealer-result {
+    font-weight: 300;
+}
+
+.mid-area #back-card {
+    height: var(--cardHeight);
+    margin-bottom: 20px;
+}
+
+.mid-area #card-line {
+    position: relative;
+    margin: auto;
+    opacity: 1;
+    width: 85px;
+    background-color: var(--cornsilk);
+    min-height: 2px;
+}
+
+.mid-area .place-bet .bet-text {
+    color: var(--amber);
+    font-weight: 700;
+}
+
+.mid-area .place-bet #input-bet {
+    background-color: var(--cornsilk);
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    height: 30px;
+    width: 150px;
+}
+
+.mid-area #submit-button {
+    font-style: italic;
+    font-weight: 700;
+    background-color: var(--dark-olive-green);
+    border-color: var(--amber);
+    border-width: 2px;
+    border-radius: 20px;
+    width: 90px;
+    /* height: 35px; */
+}
+
+.mid-area .but-control .h6 {
+    color: var(--cornsilk);
+    font-weight: 700;
+}
+
+.mid-area .but-control .duo-button {
+    height: var(--duoButHeight);
+}
