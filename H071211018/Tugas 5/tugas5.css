@@ -1,0 +1,68 @@
+h1 {
+    font-size: 60px;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 5px 3px 2px brown;
+}
+
+h3 {
+    font-size: 30px;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 2px 2px brown;
+}
+
+h4 {
+    font-size: 30px;
+    color: rgb(243, 0, 0);
+    text-shadow: 3px 2px 2px rgb(20, 17, 17);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body { 
+    background-image: URL('bg1.jpg');
+    background-size:cover;
+}
+
+.start{
+    background-color:black;
+    font-size: 13px;
+    color: aliceblue;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+   
+}
+
+.take{
+    background-color: aliceblue;
+    font-size: 13px;
+    border-radius: 6px;
+    width: 100px;
+    height: 50px;
+}
+
+.game{
+    width: 50%;
+    background-color: rgba(240, 255, 255, 0.233);
+    
+}
+
+.reset{
+    font-size: 20px;
+    width: 160px;
+    height: 35px;
+    background-color: brown;
+}
+
+input{
+    width: 480px;
+    height: 27px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#cards span{
+    margin-right: 10px;
+}
+
