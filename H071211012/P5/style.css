@@ -8,8 +8,9 @@
     --kombu-green: #283618ff;
     --cornsilk: #fefae0ff;
 
-    /* cardsize */
+    /* card size */
     --cardHeight: 175px;
+    /* button size */
     --duoButHeight: 40px;
 }
 
@@ -37,7 +38,6 @@ hr {
     font-size: 36px;
     text-align: center;
     color: var(--cornsilk);
-    /* width: 350px; */
 }
 
 .header .center-content #jack-text {
@@ -62,10 +62,6 @@ hr {
 .header .left-content .h6 {
     font-weight: 300;
     color: var(--cornsilk);
-}
-
-.header .right-content {
-    /* background-color: black; */
 }
 
 .header .right-content #restart-button {
@@ -172,7 +168,6 @@ hr {
     border-width: 2px;
     border-radius: 20px;
     width: 90px;
-    /* height: 35px; */
 }
 
 .mid-area .but-control .h6 {
