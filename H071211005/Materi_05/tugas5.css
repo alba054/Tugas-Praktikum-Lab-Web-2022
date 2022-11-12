@@ -1,0 +1,23 @@
+body {
+  background-image: url("tes.jpg");
+}
+
+.all {
+  text-align: center;
+  background-color: rgba(250, 250, 210, 0.285);
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 100%;
+}
+
+.aa {
+  text-shadow: 2px; color: lemonchiffon;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#firah {
+  text-shadow:1px; color: blanchedalmond;
+}
+
