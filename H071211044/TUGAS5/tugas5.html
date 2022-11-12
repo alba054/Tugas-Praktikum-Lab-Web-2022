@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="tgas5.css" />
+  </head>
+  <body>
+    <div class="satu">
+      <h1>Game Judi</h1>
+      <div>
+        <h2 id="play">Play A Round</h2>
+        <br />
+        <h2 id="card">Your Cards:</h2>
+        <span id="cards"></span>
+        <br />
+        <h3 id="sum">Sum:</h3>
+      </div>
+      <div class="button">
+        <button onclick="startGame()">START GAME</button>
+        <button id="start" onclick="takeCaard()">TAKE CARD</button>
+        <br /><br />
+        <h3 id="status"></h3>
+        <h2>Your Money : Rp.<span id="money">5000</span></h2>
+        <input type="number" id="taruhan" placeholder="Set Your Bet" />
+        <br />
+        <br />
+        <p><button onclick="reset()" id="reset">Reset Your Money</button></p>
+        <br />
+        <br />
+      </div>
+    </div>
+    <script src="tugas5.js"></script>
+  </body>
+</html>
