@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+    --vinWhite: #FFF8EAff;
+    --vinLightbrow: #9E7676ff;
+    --vinNormbrow: #815B5Bff;
+    --vinDarkbrow: #594545ff;
+}
+
+* {
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    background-color: var(--vinDarkbrow);
+    background-image: url("Assets/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* index content */
+#coffee-cup {
+    height: 200px;
+}
+
+.wind .content {
+    background-color: var(--vinLightbrow);
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* minuman content */
+.menu-content {
+    margin: auto;
+    padding-bottom: 10px;
+    background-color: var(--vinWhite);
+    border: none;
+    border-radius: 10px;
+    width: 900px;
+}
+
+.header #arrow-img {
+    height: 25px;
+}
+
+.header #back-arrow {
+    background-color: var(--vinWhite);
+    border: none;
+}
+
+.header .ayn {
+    color: var(--vinDarkbrow);
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.header #ayn-line {
+    margin-top: -5px;
+    opacity: 1;
+    width: 100px;
+    background-color: var(--vinLightbrow);
+    height: 3px;
+    border-radius: 5px;
+}
+
+.header #ayn-text {
+    margin-top: 10px;
+    color: var(--vinDarkbrow);
+    font-weight: 700;
+}
+
+#daftar-minuman-txt,
+#daftar-makanan-txt {
+    font-weight: 700;
+    color: var(--vinNormbrow);
+}
+
+.title-button #edit {
+    background: none;
+    color: var(--vinDarkbrow);
+    font-weight: 700;
+    border-width: medium;
+    border-color: var(--vinDarkbrow);
+    border-radius: 13px;
+    width: 120px;
+}
+
+
+/* Input Form */
+.inputan .input-name {
+    font-weight: 700;
+}
+
+.inputan .input-field {
+    height: 33px;
+    font-size: 14px;
+    border-color: var(--vinDarkbrow);
+}
+
+.inputan #submit-button {
+    margin-left: 10px;
+    background: none;
+    text-align: center;
+    font-size: 14px;
+    color: var(--vinDarkbrow);
+    font-weight: 700;
+    border-width: medium;
+    border-color: var(--vinDarkbrow);
+    border-radius: 17px;
+    width: 80px;
+    height: 35px;
+    transition: .3s;
+}
+
+.inputan #submit-button:hover {
+    border-width: none;
+    background-color: var(--vinDarkbrow);
+    color: var(--vinWhite);
+}
+
+.search-input #search-input {
+    height: 33px;
+    font-size: 12px;
+    border-radius: 10px;
+    border-color: var(--vinDarkbrow);
+}
+
+.search-input #search-button {
+    background: none;
+    margin-left: 30px;
+    font-size: 14px;
+    color: var(--vinDarkbrow);
+    font-weight: 700;
+    border-width: medium;
+    border-color: var(--vinDarkbrow);
+    border-radius: 17px;
+    width: 120px;
+    height: 35px;
+    transition: .3s;
+}
+
+.search-input #search-button:hover {
+    border-width: none;
+    background-color: var(--vinDarkbrow);
+    color: var(--vinWhite);
+}
+
+
+/* Table */
+.list-table {
+    margin-bottom: 50px;
+}
+
+.list-table th,
+.list-table td   {
+    border: 1px solid #594545;
+    padding: 5px;
+    width: 190px;
+}
+
+.list-table .namaminuman-tb {
+    width: 400px;
+}
+
+.list-table .desc-tb {
+    width: 700px;
+}
+
+.list-table .aksi-tb {
+    width: 300px;
+}
+
+
+/* modal */
+#closeModal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    align-items: center;
+}
+.modalsec-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalsec {
+    background-color: white;
+    border-radius: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
