@@ -49,6 +49,7 @@ class SellerPermissionController extends Controller
         //     'seller_id' => 'required',
         //     'permission_id' => 'required',
         // ]);
+        
         SellerPermission::create($request->all());
         $request->session()->flash('status', 'Data berhasil ditambahkan');
         return redirect('/index');

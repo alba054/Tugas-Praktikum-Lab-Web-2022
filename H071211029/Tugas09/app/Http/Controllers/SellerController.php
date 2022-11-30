@@ -49,7 +49,19 @@ class SellerController extends Controller
             'gender' => 'required',
             'no_hp' => 'required'
         ]);
-        $dataSeller = Seller::create($request->all());
+        $dataPermission = Permission::all();
+        $seller = new Seller;
+        $seller->nama = $request->input('nama');
+        $seller->address = $request->input('address');
+        $seller->gender = $request->input('gender');
+        $seller->no_hp = $request->input('no_hp');
+        $seller->save();
+
+        $sellerPermission = new SellerPermission;
+        $sellerPermission->seller_id = $seller->id;
+        $sellerPermission->permission_id = $request->input('permission_id');
+        $sellerPermission->save();
+
         $request->session()->flash('status', 'Data berhasil ditambahkan');
         return redirect('/seller');
     }

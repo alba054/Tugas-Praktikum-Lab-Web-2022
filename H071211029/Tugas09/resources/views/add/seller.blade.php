@@ -75,6 +75,20 @@
               @enderror
             </div>
 
+            <div class="form mb-4">
+                <select name="permission_id" class="form-select" aria-label="Default select example" >
+                    <option selected disabled>Permission</option>
+                    @foreach ($dataPermission as $item)
+                    <option value="{{ $item->id }}">{{ $item->nama }}</option>
+                    @endforeach
+                  </select>
+              @error('permission_id')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+              @enderror
+            </div>
+
             <div class="form-floating mb-4">
               <input name="no_hp" type="text" id="form3Example4" class="form-control @error('no_hp') is-invalid @enderror" value="{{ old('no_hp') }}"/>
               <label class="form-label" for="form3Example4">No. HP</label>
