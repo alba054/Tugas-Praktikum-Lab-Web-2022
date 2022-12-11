@@ -27,7 +27,6 @@ Route::get('cms', function () {
     return view('admin.dashboard');
 });
 
-
 Route::resource('cms/dashboard', DashboardController::class);
 
 Route::resource('cms/kelas', KelasController::class);
@@ -38,6 +37,9 @@ Route::resource('cms/dosen', DosenController::class);
 
 Route::resource('cms/matakuliah', MataKuliahController::class);
 
+Route::get('/', function () {
+    return view('frontend.homepage');
+});
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Auth::routes();

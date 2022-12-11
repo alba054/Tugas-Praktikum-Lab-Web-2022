@@ -1,3 +1,17 @@
+:root {
+    /* CSS HEX */
+    --space-cadet: #22223bff;
+    --independence: #4a4e69ff;
+    --heliotrope-gray: #9a8c98ff;
+    --silver-pink: #c9ada7ff;
+    --isabelline: #f2e9e4ff;
+}
+
 .head_table {
     background-color: #212529;
+}
+
+.pri-navbar {
+    background-color: var(--space-cadet);
+    color: var(--isabelline);
 }
