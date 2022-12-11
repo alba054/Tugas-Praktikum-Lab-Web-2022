@@ -23,18 +23,20 @@ use App\Http\Controllers\MataKuliahController;
 //     return view('admin.dashboard');
 // });
 
-Route::resource('/', DashboardController::class);
-Route::resource('/dashboard', DashboardController::class);
+Route::get('cms', function () {
+    return view('admin.dashboard');
+});
 
-Route::resource('/kelas', KelasController::class);
 
-Route::resource('/mahasiswa', MahasiswaController::class);
+Route::resource('cms/dashboard', DashboardController::class);
 
-Route::resource('/dosen', DosenController::class);
+Route::resource('cms/kelas', KelasController::class);
 
-Route::resource('/mahasiswa', MahasiswaController::class);
+Route::resource('cms/mahasiswa', MahasiswaController::class);
 
-Route::resource('/matakuliah', MataKuliahController::class);
+Route::resource('cms/dosen', DosenController::class);
+
+Route::resource('cms/matakuliah', MataKuliahController::class);
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

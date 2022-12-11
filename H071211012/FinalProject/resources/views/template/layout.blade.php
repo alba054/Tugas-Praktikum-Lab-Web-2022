@@ -20,6 +20,7 @@
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Main Sidebar Container -->
+
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="../../index3.html" class="brand-link">
@@ -40,11 +41,25 @@
                     </div>
                 </div>
 
-                <!-- Sidebar Menu -->
-                @include('template.sidebarmenu')
-                <!-- /.sidebar-menu -->
+                <div class="d-flex align-items-end flex-column" style="height: 77vh;">
+                    <!-- Sidebar Menu -->
+                    @include('template.sidebarmenu')
+                    <!-- /.sidebar-menu -->
+
+                    <ul class="nav nav-sidebar mt-auto" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="/cms/matakuliah" class="nav-link">
+                                <i class="bi bi-box-arrow-left"></i>
+                                <p>
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar -->
             </div>
-            <!-- /.sidebar -->
         </aside>
 
 

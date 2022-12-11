@@ -1,9 +1,8 @@
 <nav class="mt-2">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-        data-accordion="false">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
         <li class="nav-item">
-            <a href="/dashboard" class="nav-link">
+            <a href="/cms/dashboard" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                     Dashboard
@@ -11,7 +10,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="/kelas" class="nav-link">
+            <a href="/cms/kelas" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-door-closed"></i>
                 <p>
                     Kelas
@@ -19,7 +18,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="/mahasiswa" class="nav-link">
+            <a href="/cms/mahasiswa" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-person-vcard"></i>
                 <p>
                     Mahasiswa
@@ -27,7 +26,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="/dosen" class="nav-link">
+            <a href="/cms/dosen" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-person-lines-fill"></i>
                 <p>
                     Dosen
@@ -35,13 +34,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="/matakuliah" class="nav-link">
+            <a href="/cms/matakuliah" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-book"></i>
                 <p>
                     Mata Kuliah
                 </p>
             </a>
         </li>
-
     </ul>
 </nav>
