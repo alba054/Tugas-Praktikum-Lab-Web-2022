@@ -29,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Homepage</a>
+                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/">Homepage</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Daftar Kelas</a>
+                        <a class="nav-link {{ ($title === 'Daftar Kelas') ? 'navmenu-active' : '' }}" href="/daftarkelas">Daftar Kelas</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Kelasku</a>
+                        <a class="nav-link {{ ($title === 'Kelasku') ? 'navmenu-active' : '' }}" href="/kelasku">Kelasku</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Tugas</a>
+                        <a class="nav-link {{ ($title === 'Tugas') ? 'navmenu-active' : '' }}" href="/tugas">Tugas</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Absen</a>
+                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/absens">Absen</a>
                     </li>
                 </ul>
                 <div class="py-1"></div>

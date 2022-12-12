@@ -23,6 +23,8 @@ use App\Http\Controllers\MataKuliahController;
 //     return view('admin.dashboard');
 // });
 
+// CMS
+
 Route::get('cms', function () {
     return view('admin.dashboard');
 });
@@ -37,9 +39,28 @@ Route::resource('cms/dosen', DosenController::class);
 
 Route::resource('cms/matakuliah', MataKuliahController::class);
 
-Route::get('/', function () {
-    return view('frontend.homepage');
-});
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// front end
 
-// Auth::routes();
+Route::get('/', function () {
+    return view('frontend.homepage', [
+        'title' => 'Homepage'
+    ]);
+});
+
+Route::get('/daftarkelas', function () {
+    return view('frontend.daftarkelas', [
+        'title' => 'Daftar Kelas'
+    ]);
+});
+
+Route::get('/kelasku', function () {
+    return view('frontend.kelasku', [
+        'title' => 'Kelasku'
+    ]);
+});
+
+Route::get('/tugas', function () {
+    return view('frontend.tugas', [
+        'title' => 'Tugas'
+    ]);
+});
