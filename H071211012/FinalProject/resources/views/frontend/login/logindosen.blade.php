@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <h1>Halooooooo Dosenya</h1>
+    <h1>Tes Dosen</h1>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

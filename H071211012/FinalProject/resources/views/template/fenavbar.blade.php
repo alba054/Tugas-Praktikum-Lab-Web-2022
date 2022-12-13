@@ -37,12 +37,6 @@
                     <li class="nav-item px-2">
                         <a class="nav-link {{ ($title === 'Kelasku') ? 'navmenu-active' : '' }}" href="/kelasku">Kelasku</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Tugas') ? 'navmenu-active' : '' }}" href="/tugas">Tugas</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/absen">Absen</a>
-                    </li>
                 </ul>
                 <div class="py-1"></div>
                 <ul class="nav">

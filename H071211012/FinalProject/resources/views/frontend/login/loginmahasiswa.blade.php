@@ -1,3 +1,7 @@
+{{--
+    r
+    --}}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +21,7 @@
 </head>
 
 <body>
-    <h1>Halooooooo Mahasiswayya</h1>
+    <h1>Tes Mahasiswa</h1>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

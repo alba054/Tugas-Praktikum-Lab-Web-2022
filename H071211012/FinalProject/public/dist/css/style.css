@@ -69,6 +69,7 @@
     width: 500px;
     /* border: 1px solid var(--isabelline); */
     background-color: var(--isabelline);
+    border-radius: 8px;
 }
 
 /* .jumtron-text #jumtron-text-header {
