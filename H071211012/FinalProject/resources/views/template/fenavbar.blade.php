@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark pri-navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/homepage">
                 <i class="bi bi-building"></i>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -41,13 +41,13 @@
                         <a class="nav-link {{ ($title === 'Tugas') ? 'navmenu-active' : '' }}" href="/tugas">Tugas</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/absens">Absen</a>
+                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/absen">Absen</a>
                     </li>
                 </ul>
                 <div class="py-1"></div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="/cms/matakuliah" class="nav-link d-flex p-0">
+                        <a href="/" class="nav-link d-flex p-0">
                             <button class="btn btn-danger btn-sm">
                                 <i class="bi bi-box-arrow-left"></i> &nbsp; Logout
                             </button>

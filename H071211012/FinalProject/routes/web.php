@@ -41,6 +41,14 @@ Route::resource('cms/matakuliah', MataKuliahController::class);
 
 // front end
 
+Route::get('/loginmahasiswa', function () {
+    return view('frontend.login.loginmahasiswa');
+});
+
+Route::get('/logindosen', function () {
+    return view('frontend.login.logindosen');
+});
+
 Route::get('/', function () {
     return view('frontend.homepage', [
         'title' => 'Homepage'
