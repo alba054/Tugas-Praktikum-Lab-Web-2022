@@ -26,7 +26,9 @@ use App\Http\Controllers\MataKuliahController;
 // CMS
 
 Route::get('cms', function () {
-    return view('admin.dashboard');
+    return view('admin.dashboard', [
+        'title' => 'Dashboard'
+    ]);
 });
 
 Route::resource('cms/dashboard', DashboardController::class);
@@ -36,11 +38,13 @@ Route::resource('cms/kelas', KelasController::class);
 Route::resource('cms/mahasiswa', MahasiswaController::class);
 
 Route::resource('cms/dosen', DosenController::class);
+Route::post('cms/dosen/adddosen', [DosenController::class, 'store']);
 
 Route::resource('cms/matakuliah', MataKuliahController::class);
 
 // front end
 
+    // login
 Route::get('/loginmahasiswa', function () {
     return view('frontend.login.loginmahasiswa');
 });
@@ -49,6 +53,11 @@ Route::get('/logindosen', function () {
     return view('frontend.login.logindosen');
 });
 
+Route::get('/loginadmin', function () {
+    return view('frontend.login.loginadmin');
+});
+
+    // mainview
 Route::get('/', function () {
     return view('frontend.homepage', [
         'title' => 'Homepage'

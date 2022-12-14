@@ -18,8 +18,35 @@
 .cmsmenu-active i {
     color: var(--space-cadet) !important;
 }
-/* Login Page */
 
+/* Modal */
+.modal_container {
+    display: none;
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_form {
+    background-color: var(--isabelline);
+    border-radius: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.for_inp::placeholder {
+    text-align: center;
+}
 
 /* Main Page Style */
 .head_table {
@@ -33,7 +60,7 @@
 
 .navmenu-active {
     color: var(--space-cadet) !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     background-color: var(--isabelline);
     border-radius: 12px;
 }
@@ -78,14 +105,10 @@
 
 .jumtron-text {
     width: 500px;
-    /* border: 1px solid var(--isabelline); */
     background-color: var(--isabelline);
     border-radius: 8px;
 }
 
-/* .jumtron-text #jumtron-text-header {
-    color: var(--isabelline);
-} */
 
 .jumtron-text #jumtron-text-desc {
     text-align: center;
@@ -94,43 +117,30 @@
 /* login */
 
 .form_bg {
-    background-color: var(--independence);
+    background-color: var(--space-cadet);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position-x: center;
-    background-position-y: center;
-    /* height: 657px; */
-    height: 100vh;
-    background-size: cover;
-    background-image: url("../../dist/img/keming-tan-xMygEKgsnes-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-}
-
-.form_display_bg {
-    /* background-color: var(--independence); */
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100vh;
 }
 
 .form_display {
-    /* background-color: var(--space-cadet); */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 550px;
     width: 1250px;
-    color: var(--isabelline);
 }
 
 .form_content {
     background-color: var(--isabelline);
     border-radius: 20px;
     color: var(--space-cadet);
+    z-index: 1;
+}
+
+.logform_input::placeholder {
+    text-align: center;
 }
 
 .form_content #login_but {
@@ -145,5 +155,20 @@
 .form_content #login_but:hover {
     background-color: var(--space-cadet);
     font-weight: 600;
+    color: var(--isabelline);
+    border: 2px solid var(--space-cadet);
+
+}
+
+/* kelas view */
+.add_button {
+    border: 2px solid var(--space-cadet);
+    color: var(--space-cadet);
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.add_button:hover {
+    background-color: var(--space-cadet);
     color: var(--isabelline);
 }

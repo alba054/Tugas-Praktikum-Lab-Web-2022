@@ -37,7 +37,24 @@ class DosenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nama_dosen' => 'required',
+            'nomorInduk_dosen' => 'required|unique:users,noInduk',
+            'telp_dosen' => 'required',
+            'alamat_dosen' => 'required',
+            'password_dosen' => 'required'
+        ]);
+        $data['password_dosen'] = bcrypt($data['password_dosen']);
+        $data['role'] = '1';
+        $dosen = new User;
+        $dosen->name = $data['nama_dosen'];
+        $dosen->noInduk = $data['nomorInduk_dosen'];
+        $dosen->alamat = $data['alamat_dosen'];
+        $dosen->notelp = $data['telp_dosen'];
+        $dosen->role = $data['role'];
+        $dosen->password = $data['password_dosen'];
+        $dosen->save();
+        return redirect()->back()->with('success', 'Data Dosen Berhasil Ditambahkan');
     }
 
     /**

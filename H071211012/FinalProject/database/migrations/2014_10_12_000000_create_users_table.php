@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('name');
-            $table->string('nim/nip');
+            $table->string('noInduk');
             $table->string('alamat');
             $table->string('notelp');
             $table->string('role');
+            $table->string('password');
             $table->timestamps();
         });
     }

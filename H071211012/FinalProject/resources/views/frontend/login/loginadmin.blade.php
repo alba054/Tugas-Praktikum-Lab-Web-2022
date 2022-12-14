@@ -17,29 +17,25 @@
 </head>
 
 <body>
-
     <div class="container-fluid form_bg">
         <div class="row form_display">
             <div class="col-3 p-4 form_content">
                 <form method="POST">
                     @csrf
                     <div class="form-group text-center">
-                        <p class="h1"><i class="bi bi-buildings-fill"></i></p>
-                        <p class="h4 py-3">Login Mahasiswa</p>
+                        <p class="h1"><i class="bi bi-person-fill-exclamation"></i></p>
+                        <p class="h4 py-3">Admin</p>
                     </div>
                     <div class="form-group text-center">
-                        <label for="NIM">NIM</label>
-                        <input type="text" class="form-control logform_input" id="NIM" placeholder="NIM">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control logform_input" id="username" placeholder="username">
                     </div>
                     <div class="form-group text-center">
                         <label for="Password">Password</label>
                         <input type="password" class="form-control logform_input" id="Password" placeholder="password">
                     </div>
-                    <div class="form-group d-flex justify-content-center py-2">
+                    <div class="form-group d-flex justify-content-center pt-2">
                         <button type="submit" class="btn btn-primary" id="login_but">Login</button>
-                    </div>
-                    <div class="form-group">
-                        <p class="text-center">Masuk sebagai <a href="/logindosen">Dosen</a></p>
                     </div>
                 </form>
             </div>

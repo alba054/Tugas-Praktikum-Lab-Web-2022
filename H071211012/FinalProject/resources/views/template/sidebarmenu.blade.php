@@ -10,7 +10,7 @@
         </li>
         <li class="nav-item {{ ($title === "Kelas") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/kelas" class="nav-link">
-                <i class="nav-icon fas fa-copy bi bi-door-closed"></i>
+                <i class="nav-icon fas fa-copy bi bi-door-closed-fill"></i>
                 <p>
                     Kelas
                 </p>
@@ -34,7 +34,7 @@
         </li>
         <li class="nav-item {{ ($title === "Mata Kuliah") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/matakuliah" class="nav-link">
-                <i class="nav-icon fas fa-copy bi bi-book"></i>
+                <i class="nav-icon fas fa-copy bi bi-book-fill"></i>
                 <p>
                     Mata Kuliah
                 </p>
