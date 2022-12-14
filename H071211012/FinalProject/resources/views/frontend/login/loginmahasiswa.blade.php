@@ -1,7 +1,3 @@
-{{--
-    r
-    --}}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +17,33 @@
 </head>
 
 <body>
-    <h1>Tes Mahasiswa</h1>
 
+    <div class="container-fluid form_bg">
+        <div class="form_display_bg">
+            <div class="row form_display">
+                <div class="col-3 p-4 form_content">
+                    <form method="POST">
+                        @csrf
+                        <div class="form-group text-center">
+                            <p class="h1"><i class="bi bi-buildings-fill"></i></p>
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="NIM">NIM</label>
+                            <input type="text" class="form-control" id="NIM" placeholder="NIM">
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="Password" placeholder="password">
+                        </div>
+                        <br>
+                        <div class="form-group d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary" id="login_but">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

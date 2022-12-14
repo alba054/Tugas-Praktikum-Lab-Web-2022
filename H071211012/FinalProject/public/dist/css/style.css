@@ -7,6 +7,17 @@
     --isabelline: #f2e9e4ff;
 }
 
+/* cms */
+.cmsmenu-active {
+    /* color: var(--space-cadet) !important; */
+    font-weight: 500 !important;
+    background-color: var(--isabelline);
+    border-radius: 12px;
+}
+.cmsmenu-active p,
+.cmsmenu-active i {
+    color: var(--space-cadet) !important;
+}
 /* Login Page */
 
 
@@ -78,4 +89,61 @@
 
 .jumtron-text #jumtron-text-desc {
     text-align: center;
+}
+
+/* login */
+
+.form_bg {
+    background-color: var(--independence);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position-x: center;
+    background-position-y: center;
+    /* height: 657px; */
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../../dist/img/keming-tan-xMygEKgsnes-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.form_display_bg {
+    /* background-color: var(--independence); */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form_display {
+    /* background-color: var(--space-cadet); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 1250px;
+    color: var(--isabelline);
+}
+
+.form_content {
+    background-color: var(--isabelline);
+    border-radius: 20px;
+    color: var(--space-cadet);
+}
+
+.form_content #login_but {
+    background-color: var(--isabelline);
+    font-weight: 500;
+    width: 90px;
+    color: var(--space-cadet);
+    border: 2px solid var(--space-cadet);
+    border-radius: 20px;
+}
+
+.form_content #login_but:hover {
+    background-color: var(--space-cadet);
+    font-weight: 600;
+    color: var(--isabelline);
 }

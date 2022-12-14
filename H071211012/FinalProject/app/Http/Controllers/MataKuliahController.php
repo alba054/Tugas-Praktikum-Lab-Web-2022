@@ -15,7 +15,9 @@ class MataKuliahController extends Controller
      */
     public function index()
     {
-        return view('admin.matakuliah');
+        return view('admin.matakuliah', [
+            'title' => 'Mata Kuliah'
+        ]);
     }
 
     /**

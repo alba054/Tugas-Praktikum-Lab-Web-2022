@@ -1,7 +1,6 @@
 <nav class="mt-2">
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
-        <li class="nav-item">
+        <li class="nav-item {{ ($title === "Dashboard") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/dashboard" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
@@ -9,7 +8,7 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ ($title === "Kelas") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/kelas" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-door-closed"></i>
                 <p>
@@ -17,7 +16,7 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ ($title === "Mahasiswa") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/mahasiswa" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-person-vcard"></i>
                 <p>
@@ -25,7 +24,7 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ ($title === "Dosen") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/dosen" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-person-lines-fill"></i>
                 <p>
@@ -33,7 +32,7 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ ($title === "Mata Kuliah") ? 'cmsmenu-active' : '' }}">
             <a href="/cms/matakuliah" class="nav-link">
                 <i class="nav-icon fas fa-copy bi bi-book"></i>
                 <p>

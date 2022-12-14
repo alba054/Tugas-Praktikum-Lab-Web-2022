@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark pri-navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/homepage">
+            <a class="navbar-brand" href="/">
                 <i class="bi bi-building"></i>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"

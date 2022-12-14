@@ -64,6 +64,11 @@ Absen :
 
 	=======Pivot tabel==========
 
+		matakuliah_user : many to many user
+				=> id matakuliah_user (auto_inc),
+				=> id_user (mahasiswa & dosen) foreign_key (user),
+				=> id_matakuliah foreign_key (mata_kuliahs)
+
 		kelas_user : user many to many kelas
 				=> id_kelas_user (auto_inc), 
 				=> id_user(mahasiswa & dosen) foreign_key (user), 

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dashboard;
-use App\Http\Requests\StoreDashboardRequest;
-use App\Http\Requests\UpdateDashboardRequest;
+use App\Models\matakuliah_user;
+use App\Http\Requests\Storematakuliah_userRequest;
+use App\Http\Requests\Updatematakuliah_userRequest;
 
-class DashboardController extends Controller
+class MatakuliahUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard', [
-            'title' => 'Dashboard'
-        ]);
+        //
     }
 
     /**
@@ -33,10 +31,10 @@ class DashboardController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreDashboardRequest  $request
+     * @param  \App\Http\Requests\Storematakuliah_userRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreDashboardRequest $request)
+    public function store(Storematakuliah_userRequest $request)
     {
         //
     }
@@ -44,10 +42,10 @@ class DashboardController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Dashboard  $dashboard
+     * @param  \App\Models\matakuliah_user  $matakuliah_user
      * @return \Illuminate\Http\Response
      */
-    public function show(Dashboard $dashboard)
+    public function show(matakuliah_user $matakuliah_user)
     {
         //
     }
@@ -55,10 +53,10 @@ class DashboardController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Dashboard  $dashboard
+     * @param  \App\Models\matakuliah_user  $matakuliah_user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dashboard $dashboard)
+    public function edit(matakuliah_user $matakuliah_user)
     {
         //
     }
@@ -66,11 +64,11 @@ class DashboardController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateDashboardRequest  $request
-     * @param  \App\Models\Dashboard  $dashboard
+     * @param  \App\Http\Requests\Updatematakuliah_userRequest  $request
+     * @param  \App\Models\matakuliah_user  $matakuliah_user
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDashboardRequest $request, Dashboard $dashboard)
+    public function update(Updatematakuliah_userRequest $request, matakuliah_user $matakuliah_user)
     {
         //
     }
@@ -78,10 +76,10 @@ class DashboardController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Dashboard  $dashboard
+     * @param  \App\Models\matakuliah_user  $matakuliah_user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dashboard $dashboard)
+    public function destroy(matakuliah_user $matakuliah_user)
     {
         //
     }

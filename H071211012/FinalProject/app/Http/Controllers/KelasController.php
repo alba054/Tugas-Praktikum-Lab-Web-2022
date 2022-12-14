@@ -15,7 +15,9 @@ class KelasController extends Controller
      */
     public function index()
     {
-        return view('admin.kelas');
+        return view('admin.kelas', [
+            'title' => 'Kelas'
+        ]);
     }
 
     /**
