@@ -13,8 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('mahasiswas', function (Blueprint $table) {
-            $table->id();
+        Schema::create('kelas', function (Blueprint $table) {
+            $table->id()->autoIncrement();
+            $table->string('nama');
+            $table->string('deskripsi');
+            $table->unsignedBigInteger('mata_kuliah_id');
+            $table->foreign('mata_kuliah_id')->references('id')->on('mata_kuliahs');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mahasiswas');
+        Schema::dropIfExists('kelas');
     }
 };

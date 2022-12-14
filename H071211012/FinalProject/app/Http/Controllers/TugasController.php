@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dosen;
-use App\Http\Requests\StoreDosenRequest;
-use App\Http\Requests\UpdateDosenRequest;
+use App\Models\Tugas;
+use App\Http\Requests\StoreTugasRequest;
+use App\Http\Requests\UpdateTugasRequest;
 
-class DosenController extends Controller
+class TugasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class DosenController extends Controller
      */
     public function index()
     {
-        return view('admin.dosen');
+        //
     }
 
     /**
@@ -31,10 +31,10 @@ class DosenController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreDosenRequest  $request
+     * @param  \App\Http\Requests\StoreTugasRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreDosenRequest $request)
+    public function store(StoreTugasRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class DosenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Http\Response
      */
-    public function show(Dosen $dosen)
+    public function show(Tugas $tugas)
     {
         //
     }
@@ -53,10 +53,10 @@ class DosenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dosen $dosen)
+    public function edit(Tugas $tugas)
     {
         //
     }
@@ -64,11 +64,11 @@ class DosenController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateDosenRequest  $request
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Http\Requests\UpdateTugasRequest  $request
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDosenRequest $request, Dosen $dosen)
+    public function update(UpdateTugasRequest $request, Tugas $tugas)
     {
         //
     }
@@ -76,10 +76,10 @@ class DosenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dosen $dosen)
+    public function destroy(Tugas $tugas)
     {
         //
     }

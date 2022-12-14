@@ -71,7 +71,7 @@ Absen :
 
 		absen_user : user many to many absen
 				=> id_absen_mahasiswa (auto_inc), 
-				=> id_mahasiswa foreign_key(user), 
+				=> id_user(mahasiswa) foreign_key(user), 
 				=> status enum("hadir", "absen") default "absen", 
 				=> id_absen foreign_key(absen)
 
@@ -79,7 +79,7 @@ Absen :
 				=> id_user_tugas (auto_inc), 
 				=> id_user (mahasiswa) foreign_key(user), 
 				=> status enum("kumpul", "belum kumpul") default "belum kumpul", 
-				=> id_tugas foreign_key(absen)
+				=> id_tugas foreign_key(tugas)
 
 ================
 1. Buat form login

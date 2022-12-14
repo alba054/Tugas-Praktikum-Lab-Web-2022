@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kelas', function (Blueprint $table) {
-            $table->id();
+        Schema::create('tahun_ajarans', function (Blueprint $table) {
+            $table->id()->autoIncrement();
+            $table->string('tahun_ajaran');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kelas');
+        Schema::dropIfExists('tahun_ajarans');
     }
 };

@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Dosen;
 use App\Models\User;
+use App\Models\kelas_matakuliah_user;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class DosenPolicy
+class KelasMatakuliahUserPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class DosenPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\kelas_matakuliah_user  $kelasMatakuliahUser
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Dosen $dosen)
+    public function view(User $user, kelas_matakuliah_user $kelasMatakuliahUser)
     {
         //
     }
@@ -48,10 +48,10 @@ class DosenPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\kelas_matakuliah_user  $kelasMatakuliahUser
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Dosen $dosen)
+    public function update(User $user, kelas_matakuliah_user $kelasMatakuliahUser)
     {
         //
     }
@@ -60,10 +60,10 @@ class DosenPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\kelas_matakuliah_user  $kelasMatakuliahUser
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Dosen $dosen)
+    public function delete(User $user, kelas_matakuliah_user $kelasMatakuliahUser)
     {
         //
     }
@@ -72,10 +72,10 @@ class DosenPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\kelas_matakuliah_user  $kelasMatakuliahUser
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Dosen $dosen)
+    public function restore(User $user, kelas_matakuliah_user $kelasMatakuliahUser)
     {
         //
     }
@@ -84,10 +84,10 @@ class DosenPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Dosen  $dosen
+     * @param  \App\Models\kelas_matakuliah_user  $kelasMatakuliahUser
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Dosen $dosen)
+    public function forceDelete(User $user, kelas_matakuliah_user $kelasMatakuliahUser)
     {
         //
     }

@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Mahasiswa;
+use App\Models\Tugas;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class MahasiswaPolicy
+class TugasPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class MahasiswaPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Mahasiswa  $mahasiswa
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Mahasiswa $mahasiswa)
+    public function view(User $user, Tugas $tugas)
     {
         //
     }
@@ -48,10 +48,10 @@ class MahasiswaPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Mahasiswa  $mahasiswa
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Mahasiswa $mahasiswa)
+    public function update(User $user, Tugas $tugas)
     {
         //
     }
@@ -60,10 +60,10 @@ class MahasiswaPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Mahasiswa  $mahasiswa
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Mahasiswa $mahasiswa)
+    public function delete(User $user, Tugas $tugas)
     {
         //
     }
@@ -72,10 +72,10 @@ class MahasiswaPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Mahasiswa  $mahasiswa
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Mahasiswa $mahasiswa)
+    public function restore(User $user, Tugas $tugas)
     {
         //
     }
@@ -84,10 +84,10 @@ class MahasiswaPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Mahasiswa  $mahasiswa
+     * @param  \App\Models\Tugas  $tugas
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Mahasiswa $mahasiswa)
+    public function forceDelete(User $user, Tugas $tugas)
     {
         //
     }
