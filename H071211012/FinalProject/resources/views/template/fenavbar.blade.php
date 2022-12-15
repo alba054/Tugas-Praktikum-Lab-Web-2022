@@ -29,23 +29,27 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Homepage') ? 'navmenu-active' : '' }}" href="/">Homepage</a>
+                        <a class="nav-link {{ $title === 'Homepage' ? 'navmenu-active' : '' }}"
+                            href="/">Homepage</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Daftar Kelas') ? 'navmenu-active' : '' }}" href="/daftarkelas">Daftar Kelas</a>
+                        <a class="nav-link {{ $title === 'Daftar Kelas' ? 'navmenu-active' : '' }}"
+                            href="/daftarkelas">Daftar Kelas</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link {{ ($title === 'Kelasku') ? 'navmenu-active' : '' }}" href="/kelasku">Kelasku</a>
+                        <a class="nav-link {{ $title === 'Kelasku' ? 'navmenu-active' : '' }}"
+                            href="/kelasku">Kelasku</a>
                     </li>
                 </ul>
                 <div class="py-1"></div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link d-flex p-0">
-                            <button class="btn btn-danger btn-sm">
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <button class="btn btn-danger btn-sm" type="submit">
                                 <i class="bi bi-box-arrow-left"></i> &nbsp; Logout
                             </button>
-                        </a>
+                        </form>
                     </li>
                 </ul>
                 <div class="py-1"></div>
@@ -57,13 +61,13 @@
     @yield('content')
     {{-- end main content --}}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     {{-- <script src="../../../dist/js/func.js"></script> --}}
 </body>

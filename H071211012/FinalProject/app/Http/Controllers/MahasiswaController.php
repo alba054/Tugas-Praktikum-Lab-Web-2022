@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\TahunAjaran;
+use Illuminate\Support\Str;
 
 class MahasiswaController extends Controller
 {
@@ -14,8 +16,12 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
+        $tahunajarans = TahunAjaran::all();
+        $mahasiswas = User::where('role', '2')->get();
         return view('admin.mahasiswa', [
-            'title' => 'Mahasiswa'
+            'title' => 'Mahasiswa',
+            'tahunajarans' => $tahunajarans,
+            'mahasiswas' => $mahasiswas
         ]);
     }
 
@@ -37,7 +43,29 @@ class MahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nama_mahasiswa' => 'required',
+            'angkatan' => 'required',
+            'telp_mahasiswa' => 'required',
+            'alamat_mahasiswa' => 'required',
+            'password_mahasiswa' => 'required'
+        ]);
+
+        $cmahasiswa = User::where('role', '2')->count();
+        $data['password'] = bcrypt($data['password_mahasiswa']);
+
+        $tahun_tmp = substr($data['angkatan'], Str::length($data['angkatan']) - 2);
+        $mahasiswa = new User;
+        $mahasiswa->name = $data['nama_mahasiswa'];
+        $mahasiswa->noInduk = 'H071'. $tahun_tmp . '1' . sprintf("%03d", $cmahasiswa + 1);
+        $mahasiswa->alamat = $data['alamat_mahasiswa'];
+        $mahasiswa->notelp = $data['telp_mahasiswa'];
+        $mahasiswa->password = $data['password'];
+        $mahasiswa->role = '2';
+        $mahasiswa->save();
+
+        return redirect()->back()->with('success', 'Data Mahasiswa Berhasil Ditambahkan');
+
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class DosenController extends Controller
 {
@@ -14,8 +15,10 @@ class DosenController extends Controller
      */
     public function index()
     {
+        $dosens = User::where('role', '1')->get();
         return view('admin.dosen', [
-            'title' => 'Dosen'
+            'title' => 'Dosen',
+            'dosens' => $dosens
         ]);
     }
 
@@ -86,9 +89,22 @@ class DosenController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request)
     {
-        //
+        $data = $request->validate([
+            'nama_dosen' => 'required',
+            'nomorInduk_dosen' => 'required',
+            'telp_dosen' => 'required',
+            'alamat_dosen' => 'required',
+        ]);
+        // dd($request->id);
+        $dosen = User::find($request->id);
+        $dosen->name = $data['nama_dosen'];
+        $dosen->noInduk = $data['nomorInduk_dosen'];
+        $dosen->alamat = $data['alamat_dosen'];
+        $dosen->notelp = $data['telp_dosen'];
+        $dosen->save();
+        return redirect()->back()->with('success', 'Data Dosen Berhasil Diubah');
     }
 
     /**
@@ -97,8 +113,11 @@ class DosenController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(Request $request)
     {
-        //
+        $dosen = User::find($request->id);
+        $dosen->delete();
+        // dd($dosen);
+        return redirect()->back()->with('success', 'Data Dosen Berhasil Dihapus');
     }
 }
