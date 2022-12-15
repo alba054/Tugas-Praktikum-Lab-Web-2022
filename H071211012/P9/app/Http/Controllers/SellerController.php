@@ -13,10 +13,13 @@ class SellerController extends Controller
     public function index()
     {
         $sellers = seller::all();
+        $permissions = permission::all();
+        $sellpers = seller::with('permissions')->get();
         return view('sellers', [
             'title' => 'Sellers',
             'sellers' => $sellers,
-            'permissions' => permission::all()
+            'permissions' => $permissions,
+            'selpers' => $sellpers
         ]);
     }
 
@@ -45,9 +48,8 @@ class SellerController extends Controller
     // Eloquent
     public function insertSellerEloquent(Request $request)
     {
-        dd($request->input("permission-input"));
+        // dd($request->input("permission-input"));
         $data = $request->validate([
-            'permission-input',
             'namaseller-input' => 'required',
             'addresseller-input' => 'required',
             'genderseller-input' => 'required',
@@ -62,7 +64,7 @@ class SellerController extends Controller
         $seller->no_hp = $data['nohpseller-input'];
         $seller->status = $data['statusseller-input'];
         $seller->save();
-        foreach ($data['permission-input'] as $permission_id) {
+        foreach ($request->input("permission-input") as $permission_id) {
             $seller_permission = new seller_permission;
             $seller_permission->seller_id = $seller->id;
             $seller_permission->permission_id = $permission_id;

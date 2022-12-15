@@ -19,13 +19,13 @@ class seller_permission extends Model
     //     return $this->belongsTo(permission::class);
     // }
 
-    // public function seller()
-    // {
-    //     return $this->belongsTo(seller::class);
-    // }
+    public function seller()
+    {
+        return $this->belongsTo(seller::class);
+    }
 
-    // public function permission()
-    // {
-    //     return $this->belongsTo(permission::class);
-    // }
+    public function permission()
+    {
+        return $this->belongsTo(permission::class);
+    }
 }

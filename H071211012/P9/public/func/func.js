@@ -93,9 +93,18 @@ function showDeleteAlert(classname, index) {
 }
 
 function closeModal() {
+    const deleteAlert = document.getElementsByClassName('modaldel-container')[0];
+    deleteAlert.style.display = 'none';
     modal.style.display = 'none'; // Menutup modal
     document.getElementById('submit-button').style.display = 'none';
     document.getElementById('update-button').style.display = 'none';
-    const deleteAlert = document.getElementsByClassName('modaldel-container')[0];
-    deleteAlert.style.display = 'none';
+    document.getElementsByClassName('modaldetail-container')[0].style.display = 'none';
+}
+
+function showDetails(classname, index) {
+    let detail = document.getElementsByClassName('modaldetail-container')[0];
+    detail.style.display = 'block';
+    let datadetail = document.getElementsByClassName(classname)[index].value;
+    console.log(datadetail);
+    document.getElementById('show_detail').innerHTML = datadetail;
 }

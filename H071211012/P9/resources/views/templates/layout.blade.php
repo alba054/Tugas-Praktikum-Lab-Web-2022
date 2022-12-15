@@ -37,9 +37,6 @@
                     <li class="nav-item">
                         <a class="nav-link {{ ($title === 'Permission') ? 'active' : '' }}" href="/permissions">Permission</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ ($title === 'Seller_Permission') ? 'active' : '' }}" href="/seller_permission">Seller Permission</a>
-                    </li>
                 </ul>
             </div>
         </div>

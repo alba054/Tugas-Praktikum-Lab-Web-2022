@@ -15,7 +15,7 @@ class permission extends Model
     // }
     public function sellers()
     {
-        return $this->belongsToMany(seller::class);
+        return $this->belongsToMany(seller::class, 'seller_permissions', 'permission_id', 'seller_id');
     }
 
 }
