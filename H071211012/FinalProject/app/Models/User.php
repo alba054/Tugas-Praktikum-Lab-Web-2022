@@ -43,4 +43,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function kelas()
+    {
+        return $this->belongsToMany(Kelas::class, 'kelas_users', 'user_id', 'kelas_id');
+    }
+
+    public function matakuliah()
+    {
+        return $this->belongsToMany(MataKuliah::class, 'matakuliah_users', 'user_id', 'matakuliah_id');
+    }
+
+    public function tugas()
+    {
+        return $this->belongsToMany(Tugas::class, 'tugas_users', 'user_id', 'tugas_id');
+    }
 }
